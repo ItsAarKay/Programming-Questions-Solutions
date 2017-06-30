@@ -24,6 +24,18 @@ class Node {
         n.next = end;
     }
 
+    // return a node
+    Node getNode(int d) {
+        Node head = this;
+        while (head != null) {
+            if (head.data == d) {
+                return head;
+            }
+            head = head.next;
+        }
+        return null;
+    }
+
     // delete a node by traversing through the whole list one by one
     Node deleteNode(Node head, int d) {
         Node n = head;
