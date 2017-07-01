@@ -14,14 +14,15 @@ class Node {
         data = d;
     }
 
-    // add new node at the end of the linked list
-    void addNode(int d) {
+    // add new node at the end of the linked list and return
+    Node addNode(int d) {
         Node end = new Node(d);
         Node n = this;
         while (n.next != null) {
             n = n.next;
         }
         n.next = end;
+        return end;
     }
 
     // return a node
