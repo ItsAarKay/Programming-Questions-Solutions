@@ -18,7 +18,8 @@ public class Palindrome {
         myNode.addNode(9);
         myNode.addNode('a');
 
-        if (isPalindrome(myNode, 7)) {
+        int size = myNode.size();
+        if (isPalindrome(myNode, size)) {
             System.out.println("true");
         } else {
             System.out.println("false");
