@@ -25,6 +25,15 @@ class Node {
         return end;
     }
 
+    // add passed node at the tail of the list
+    void addNode(Node node) {
+        Node n = this;
+        while (n.next != null) {
+            n = n.next;
+        }
+        n.next = node;
+    }
+
     // return a node
     Node getNode(int d) {
         Node head = this;
