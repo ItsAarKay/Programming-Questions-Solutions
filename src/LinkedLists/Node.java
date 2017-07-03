@@ -62,4 +62,15 @@ class Node {
             head = head.next;
         }
     }
+
+    // returns the size of the linked list
+    int size() {
+        Node head = this;
+        int s = 0;
+        while (head != null) {
+            s++;
+            head = head.next;
+        }
+        return s;
+    }
 }
